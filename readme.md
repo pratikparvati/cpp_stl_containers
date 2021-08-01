@@ -183,7 +183,7 @@ A `list` is implemented as a doubly linked list of elements. This means each ele
 Some Important pointers on `std::list`
 
 - Unlike `vector`s and `deque`s, fast random access to `list` elements is not supported, to access the tenth element, you must navigate the first nine elements by following the chain of their links (`O(n)` complexity because the average distance is proportional to the number of elements).
-- `list` supports bidirectional iterators and allows constant time `insert` and `erase` operations  anywhere  within  the  sequence,  with  storage  management  handled  automatically.` (`O(1)` complexity).
+- `list` supports bidirectional iterators and allows constant time `insert` and `erase` operations  anywhere  within  the  sequence,  with  storage  management  handled  automatically. (`O(1)` complexity).
 - If only uni-directional list traversal is needed, `std::forward_list` may be more performant in both space and maintenance complexity, because it maintains only list item pointers in one direction.
 
 Example:
@@ -268,8 +268,7 @@ int main()
 */
 ```
 #### `std::multiset`
-A  multiset  is  the  same  as  a  set  except  that  duplicates  are  allowed.  Thus,  a  multiset  
-may contain multiple elements that have the same value.
+A  multiset  is  the  same  as  a  set  except  that  duplicates  are  allowed.  Thus,  a  multiset  may contain multiple elements that have the same value.
 
 - The time complexity of `count()` is additionally linear (`O(n)`) to the number of elements having the key. 
 
